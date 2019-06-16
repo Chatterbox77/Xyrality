@@ -8,7 +8,7 @@
 
 import UIKit
 @IBDesignable
-class WhereButton: UIButton {
+class RoundedButton: UIButton {
     
     override func awakeFromNib() {
         setupView()

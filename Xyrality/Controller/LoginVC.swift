@@ -8,16 +8,18 @@
 
 import UIKit
 
-class MainVC: UIViewController {
+class LoginVC: UIViewController {
     @IBOutlet weak var usernameField:UITextField!
     @IBOutlet weak var passwordField:UITextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
-    }
-    @IBAction func loginBtnTaped(_ sender:UIButton){
+        navigationItem.title = "Login"
         
+    }
+    
+    @IBAction func loginBtnTaped(_ sender:UIButton){
+        guard let username = usernameField.text, let password = passwordField.text else { return }
     }
 
 
