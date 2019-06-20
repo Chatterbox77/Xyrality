@@ -22,6 +22,7 @@
 		5252F3CF22B62F5600FACFD5 /* UIColor+XyralityExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5252F3CE22B62F5600FACFD5 /* UIColor+XyralityExtensions.swift */; };
 		5283229722B91D32004694C6 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5283229622B91D32004694C6 /* Reachability.swift */; };
 		5292075D22BBDA1200851057 /* UIVIew+XyralityExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5292075C22BBDA1200851057 /* UIVIew+XyralityExtensions.swift */; };
+		5292075F22BBE1AA00851057 /* UIViewController+XyralityExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5292075E22BBE1AA00851057 /* UIViewController+XyralityExtensions.swift */; };
 		529F6C4422B636F200C99CBB /* UIDevice+XyralityExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 529F6C4322B636F200C99CBB /* UIDevice+XyralityExtensions.swift */; };
 		52DA2FAF22BBBE0A001C523C /* AlertService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52DA2FAE22BBBE0A001C523C /* AlertService.swift */; };
 /* End PBXBuildFile section */
@@ -44,6 +45,7 @@
 		5252F3CE22B62F5600FACFD5 /* UIColor+XyralityExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+XyralityExtensions.swift"; sourceTree = "<group>"; };
 		5283229622B91D32004694C6 /* Reachability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
 		5292075C22BBDA1200851057 /* UIVIew+XyralityExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIVIew+XyralityExtensions.swift"; sourceTree = "<group>"; };
+		5292075E22BBE1AA00851057 /* UIViewController+XyralityExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+XyralityExtensions.swift"; sourceTree = "<group>"; };
 		529F6C4322B636F200C99CBB /* UIDevice+XyralityExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIDevice+XyralityExtensions.swift"; sourceTree = "<group>"; };
 		52DA2FAE22BBBE0A001C523C /* AlertService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertService.swift; sourceTree = "<group>"; };
 		CCC26F6768225E4C9D605209 /* Pods_Xyrality.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Xyrality.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -139,6 +141,7 @@
 				5252F3CE22B62F5600FACFD5 /* UIColor+XyralityExtensions.swift */,
 				529F6C4322B636F200C99CBB /* UIDevice+XyralityExtensions.swift */,
 				5292075C22BBDA1200851057 /* UIVIew+XyralityExtensions.swift */,
+				5292075E22BBE1AA00851057 /* UIViewController+XyralityExtensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -286,6 +289,7 @@
 			files = (
 				5252F3B722B62BBB00FACFD5 /* LoginVC.swift in Sources */,
 				52DA2FAF22BBBE0A001C523C /* AlertService.swift in Sources */,
+				5292075F22BBE1AA00851057 /* UIViewController+XyralityExtensions.swift in Sources */,
 				521312BD22B7D9C50088ABA7 /* ListVC.swift in Sources */,
 				5283229722B91D32004694C6 /* Reachability.swift in Sources */,
 				5223637F22B66B8F00C61FBA /* NetworkService.swift in Sources */,
@@ -446,6 +450,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 22899AC455;
 				INFOPLIST_FILE = Xyrality/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -465,6 +470,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 22899AC455;
 				INFOPLIST_FILE = Xyrality/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

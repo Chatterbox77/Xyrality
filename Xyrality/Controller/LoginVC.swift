@@ -16,6 +16,7 @@ class LoginVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         view.fixInputAssistant()
+        self.hideKeyboardOnTap()
         usernameField.delegate = self
         passwordField.delegate = self
 
@@ -74,7 +75,7 @@ class LoginVC: UIViewController {
                                 DispatchQueue.main.async(execute: { () -> Void in
                                     
                                     self.loginBtn.stopAnimation(animationStyle: .shake) {
-                                        AlertService.alert(in: self,attachTo:self.loginBtn,withTitle: "Something went wrong!", message: "Please check your login credentials and try again")
+                                        AlertService.alert(in: self,withTitle: "Something went wrong!", message: "Please check your login credentials and try again")
                                     }
                                 })
                             }
@@ -84,7 +85,7 @@ class LoginVC: UIViewController {
                             DispatchQueue.main.async(execute: { () -> Void in
                                 
                                 self.loginBtn.stopAnimation(animationStyle: .shake) {
-                                    AlertService.alert(in: self,attachTo:self.loginBtn,withTitle: "Something went wrong!", message: "Please try again")
+                                    AlertService.alert(in: self,withTitle: "Something went wrong!", message: "Please try again")
                                 }
                             })
                             break
@@ -94,8 +95,9 @@ class LoginVC: UIViewController {
             }
             })
         }else{
-            AlertService.alert(in: self,attachTo:self.loginBtn,withTitle: "Something went wrong!", message: "Please check your internet connection and try again")
+            AlertService.alert(in: self,withTitle: "Something went wrong!", message: "Please check your internet connection and try again")
         }
+        passwordField.text = ""
     }
     
 
