@@ -7,11 +7,10 @@
 //
 
 import UIKit
-
 class AlertService {
     
     private init() {}
-    
+    // Presents alert
     static func alert(in vc: UIViewController,attachTo view:UIView, withTitle title: String, message:String,completion: (() -> Void)? = nil) {
         let alert = UIAlertController(title: title, message: message, preferredStyle: .actionSheet)
         let action = UIAlertAction(title: "Ok", style: .default) { (_) in

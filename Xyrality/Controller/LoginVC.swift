@@ -15,6 +15,7 @@ class LoginVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        view.fixInputAssistant()
         navigationItem.title = "Login"
         usernameField.delegate = self
         passwordField.delegate = self
@@ -68,7 +69,7 @@ class LoginVC: UIViewController {
                                     
                                     self.loginBtn.stopAnimation(animationStyle: .expand) {
                                         
-                                        if let destinationVC = UIStoryboard(name:"Main",bundle:nil).instantiateViewController(withIdentifier: "listVC") as? ListVC {
+                                        if let destinationVC = UIStoryboard(name:"Main",bundle:nil).instantiateViewController(withIdentifier:STORYBOARD_LIST_VC) as? ListVC {
                                             destinationVC.servers = servers
                                             self.present(destinationVC, animated: true, completion: nil)
                                         }

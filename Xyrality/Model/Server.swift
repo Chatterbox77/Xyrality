@@ -7,6 +7,7 @@
 //
 
 import Foundation
+//struct that stores server data
 struct Server{
     private(set) var serverName:String
     private(set) var country:String

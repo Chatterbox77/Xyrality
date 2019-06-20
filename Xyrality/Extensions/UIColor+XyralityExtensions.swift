@@ -8,6 +8,7 @@
 
 import UIKit
 extension UIColor{
+//    constructor to intiate UIColor from hex string
     convenience init(hexString:String) {
         let hexString:NSString =
             hexString.trimmingCharacters(in: NSCharacterSet.whitespacesAndNewlines ) as NSString

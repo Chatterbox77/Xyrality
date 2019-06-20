@@ -7,7 +7,9 @@
 //
 
 import UIKit
+
 extension UIDevice{
+//  UIDevice property that returns the device type
     var deviceType:String{
         let deviceType = String(format: "%@ - %@%@", UIDevice.current.model,UIDevice.current.systemName,UIDevice.current.systemVersion)
         return deviceType

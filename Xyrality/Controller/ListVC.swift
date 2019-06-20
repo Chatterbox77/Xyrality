@@ -21,12 +21,12 @@ class ListVC: UIViewController {
         super.viewDidLoad()
         sortServers()
         servers = serversSortedByName
-//        tableView.contentInset = UIEdgeInsets(top: 10, left: 0, bottom: 0, right: 0)
+
         tableView.separatorInset = UIEdgeInsets(top: 10, left: 10, bottom: 10, right: 10)
         tableView.delegate = self
         tableView.dataSource = self
 
-        // Do any additional setup after loading the view.
+
     }
     @IBAction func segmentedControlValueChanged(_ sender:UISegmentedControl){
         switch sender.selectedSegmentIndex {

@@ -10,7 +10,6 @@
 		49B3765C510D7AA4A66F07EA /* Pods_Xyrality.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCC26F6768225E4C9D605209 /* Pods_Xyrality.framework */; };
 		521312BD22B7D9C50088ABA7 /* ListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521312BC22B7D9C50088ABA7 /* ListVC.swift */; };
 		5223637F22B66B8F00C61FBA /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5223637E22B66B8F00C61FBA /* NetworkService.swift */; };
-		5223638122B671B800C61FBA /* Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5223638022B671B800C61FBA /* Enums.swift */; };
 		5223638322B69DD900C61FBA /* ServerDataCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5223638222B69DD900C61FBA /* ServerDataCell.swift */; };
 		5223638522B69E2700C61FBA /* Server.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5223638422B69E2700C61FBA /* Server.swift */; };
 		5252F3B522B62BBB00FACFD5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5252F3B422B62BBB00FACFD5 /* AppDelegate.swift */; };
@@ -22,6 +21,7 @@
 		5252F3CC22B62E2400FACFD5 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5252F3CB22B62E2400FACFD5 /* Constants.swift */; };
 		5252F3CF22B62F5600FACFD5 /* UIColor+XyralityExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5252F3CE22B62F5600FACFD5 /* UIColor+XyralityExtensions.swift */; };
 		5283229722B91D32004694C6 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5283229622B91D32004694C6 /* Reachability.swift */; };
+		5292075D22BBDA1200851057 /* UIVIew+XyralityExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5292075C22BBDA1200851057 /* UIVIew+XyralityExtensions.swift */; };
 		529F6C4422B636F200C99CBB /* UIDevice+XyralityExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 529F6C4322B636F200C99CBB /* UIDevice+XyralityExtensions.swift */; };
 		52DA2FAF22BBBE0A001C523C /* AlertService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52DA2FAE22BBBE0A001C523C /* AlertService.swift */; };
 /* End PBXBuildFile section */
@@ -30,7 +30,6 @@
 		0B60237CF6AC4C3DBBFECA4C /* Pods-Xyrality.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Xyrality.debug.xcconfig"; path = "Target Support Files/Pods-Xyrality/Pods-Xyrality.debug.xcconfig"; sourceTree = "<group>"; };
 		521312BC22B7D9C50088ABA7 /* ListVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListVC.swift; sourceTree = "<group>"; };
 		5223637E22B66B8F00C61FBA /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
-		5223638022B671B800C61FBA /* Enums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enums.swift; sourceTree = "<group>"; };
 		5223638222B69DD900C61FBA /* ServerDataCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerDataCell.swift; sourceTree = "<group>"; };
 		5223638422B69E2700C61FBA /* Server.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Server.swift; sourceTree = "<group>"; };
 		5252F3B122B62BBB00FACFD5 /* Xyrality.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Xyrality.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -44,6 +43,7 @@
 		5252F3CB22B62E2400FACFD5 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		5252F3CE22B62F5600FACFD5 /* UIColor+XyralityExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+XyralityExtensions.swift"; sourceTree = "<group>"; };
 		5283229622B91D32004694C6 /* Reachability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
+		5292075C22BBDA1200851057 /* UIVIew+XyralityExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIVIew+XyralityExtensions.swift"; sourceTree = "<group>"; };
 		529F6C4322B636F200C99CBB /* UIDevice+XyralityExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIDevice+XyralityExtensions.swift"; sourceTree = "<group>"; };
 		52DA2FAE22BBBE0A001C523C /* AlertService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertService.swift; sourceTree = "<group>"; };
 		CCC26F6768225E4C9D605209 /* Pods_Xyrality.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Xyrality.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -138,6 +138,7 @@
 			children = (
 				5252F3CE22B62F5600FACFD5 /* UIColor+XyralityExtensions.swift */,
 				529F6C4322B636F200C99CBB /* UIDevice+XyralityExtensions.swift */,
+				5292075C22BBDA1200851057 /* UIVIew+XyralityExtensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -147,7 +148,6 @@
 			children = (
 				5283229622B91D32004694C6 /* Reachability.swift */,
 				5252F3CB22B62E2400FACFD5 /* Constants.swift */,
-				5223638022B671B800C61FBA /* Enums.swift */,
 			);
 			path = "Support Files";
 			sourceTree = "<group>";
@@ -292,10 +292,10 @@
 				5252F3CA22B62DF700FACFD5 /* RoundedButton.swift in Sources */,
 				529F6C4422B636F200C99CBB /* UIDevice+XyralityExtensions.swift in Sources */,
 				5252F3CF22B62F5600FACFD5 /* UIColor+XyralityExtensions.swift in Sources */,
+				5292075D22BBDA1200851057 /* UIVIew+XyralityExtensions.swift in Sources */,
 				5223638522B69E2700C61FBA /* Server.swift in Sources */,
 				5223638322B69DD900C61FBA /* ServerDataCell.swift in Sources */,
 				5252F3CC22B62E2400FACFD5 /* Constants.swift in Sources */,
-				5223638122B671B800C61FBA /* Enums.swift in Sources */,
 				5252F3B522B62BBB00FACFD5 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

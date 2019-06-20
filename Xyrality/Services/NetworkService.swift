@@ -11,6 +11,7 @@ class NetworkService{
     static let shared = NetworkService()
     private init(){}
     
+    //Downloads data from the server. Returns Result.success(Data) in case of success, return Result.failure(Error) in case of error
     func  getDataFromServer(withEmail email:String,password:String, completion: @escaping (Result<Data,Error>) -> ()) {
         let urlString = "http://backend1.lordsandknights.com/XYRALITY/WebObjects/BKLoginServer.woa/wa/worlds"
         var request = URLRequest(url: URL(string:urlString)!)
@@ -29,7 +30,7 @@ class NetworkService{
         dataTask.resume()
     }
     
-
+    // generates httpBody from provided parameters. returns Optional(String)
     private func requestParameters(fromEmail email: String, password: String) -> String? {
         
         let params: Dictionary<String, String> = [
