@@ -23,7 +23,7 @@ extension UIView
             {
                 subview.fixInputAssistant()
             }
-        }
+        } 
     }
 }
 

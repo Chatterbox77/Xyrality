@@ -9,7 +9,7 @@
 import UIKit
 class NetworkService{
     static let shared = NetworkService()
-    private init(){}
+    private init(){} 
     
     //Downloads data from the server. Returns Result.success(Data) in case of success, return Result.failure(Error) in case of error
     func  getDataFromServer(withEmail email:String,password:String, completion: @escaping (Result<Data,Error>) -> ()) {

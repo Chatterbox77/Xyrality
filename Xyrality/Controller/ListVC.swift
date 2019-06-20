@@ -52,7 +52,7 @@ class ListVC: UIViewController {
 extension ListVC:UITableViewDelegate,UITableViewDataSource{
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return servers.count
-    }
+    } 
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: SERVER_DATA_CELL) as? ServerDataCell else { return UITableViewCell() }

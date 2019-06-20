@@ -5,7 +5,7 @@
 //  Created by macBook pro on 6/16/19.
 //  Copyright © 2019 AndriiHorban. All rights reserved.
 //
-
+ 
 import UIKit
 //Color Constants
 let COLOR_GREY = UIColor(hexString:"#363636")

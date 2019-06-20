@@ -19,7 +19,7 @@ class ServerDataCell: UITableViewCell {
             containerView.layer.shadowColor = UIColor.darkGray.cgColor
             containerView.layer.shadowOffset = CGSize(width: 3, height: 3)
         }
-    }
+    } 
     @IBOutlet
     weak var clippingView: UIView! {
         didSet {

@@ -6,7 +6,7 @@
 
 import Foundation
 import SystemConfiguration
-
+ 
 public class Reachability {
 //  checks if device is connected to internet
     class func isConnectedToNetwork() -> Bool {

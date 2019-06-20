@@ -27,7 +27,7 @@ struct Server{
             let worldStatus = worldStatusDict["description"] as? String ,
             let worldStatusId = worldStatusDict["id"] as? String else { return nil }
         self.serverName = serverName
-        self.country = country
+        self.country = country 
         self.language = language
         self.mapUrl = mapUrl
         self.url = url
