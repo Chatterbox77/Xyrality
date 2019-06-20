@@ -6,44 +6,44 @@
 //  Copyright © 2019 AndriiHorban. All rights reserved.
 //
 
-import Foundation
+import UIKit
 class NetworkService{
     static let shared = NetworkService()
     private init(){}
-    func getDataFromServer(withEmail email:String,password:String,completion: @escaping (Result<[String:Any],DownloadError>) -> ()){
-        let headers = [
-            "cache-control": "no-cache"
-//            ,
-//            "Postman-Token": "1b9cf7c4-3e2e-428f-9ef5-dcd2ffa9a468"
-        ]
-        
-        let request = NSMutableURLRequest(url: NSURL(string: "http://backend1.lordsandknights.com/XYRALITY/WebObjects/BKLoginServer.woa/wa/worlds?login=\(email)&password=\(password)&deviceType=iPhone%20-%20iOS%2012.2&deviceId=7399DE16-EBF4-4184-8C10-BC62BC52429C")! as URL,
-                                          cachePolicy: .useProtocolCachePolicy,
-                                          timeoutInterval: 10.0)
+    
+    func  getDataFromServer(withEmail email:String,password:String, completion: @escaping (Result<Data,Error>) -> ()) {
+        let urlString = "http://backend1.lordsandknights.com/XYRALITY/WebObjects/BKLoginServer.woa/wa/worlds"
+        var request = URLRequest(url: URL(string:urlString)!)
         request.httpMethod = "POST"
-        request.allHTTPHeaderFields = headers
-        
+        request.addValue("application/x-www-form-urlencoded", forHTTPHeaderField: "Content-Type")
+        request.httpBody = (requestParameters(fromEmail: email, password: password) ?? "").data(using: String.Encoding.utf8)
         let session = URLSession.shared
-        let dataTask = session.dataTask(with: request as URLRequest, completionHandler: { (data, response, error) -> Void in
-            if (error != nil) {
-                
-                completion(.failure(.requestError))
-            } else {
-                guard let data = data else {
-                    completion(.failure(.requestError))
-                    return
-                }
-                guard let parsedData = try? PropertyListSerialization.propertyList(from: data, format: nil) as? [String:Any] else{
-                    completion(.failure(.parseError))
-                    return
-                }
-               
-                completion(.success(parsedData))
-                
+        let dataTask = session.dataTask(with: request){ (data, response, error) -> () in
+            if let error = error{
+                    completion(.failure(error))
+                }else{
+                    completion(.success(data!))
             }
-        })
-        
+            
+        }
         dataTask.resume()
     }
     
+
+    private func requestParameters(fromEmail email: String, password: String) -> String? {
+        
+        let params: Dictionary<String, String> = [
+            "login": email,
+            "password": password,
+            "deviceType": UIDevice.current.deviceType,
+            "deviceId": UUID().uuidString
+        ]
+        let paramsString: String = Array(params.map { "\($0)=\($1)"}).joined(separator: "&")
+        
+        guard let encodedString = paramsString.addingPercentEncoding(withAllowedCharacters: CharacterSet.urlQueryAllowed) else { return nil }
+        return encodedString
+        
+        
+    }
 }
+

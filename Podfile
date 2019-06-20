@@ -6,6 +6,6 @@ target 'Xyrality' do
   use_frameworks!
 
   # Pods for Xyrality
-  pod "Alamofire/Alamofire" "5.0.0-beta.5"
+  pod 'TransitionButton'
 
 end

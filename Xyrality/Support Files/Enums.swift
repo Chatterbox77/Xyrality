@@ -7,7 +7,7 @@
 //
 
 import Foundation
-enum DownloadError:Error,LocalizedError{
+enum Exception:Error,LocalizedError{
     case requestError
     case parseError
     public var errorDescription: String? {

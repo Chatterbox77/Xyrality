@@ -7,8 +7,9 @@
 //
 
 import UIKit
+import TransitionButton
 @IBDesignable
-class RoundedButton: UIButton {
+class RoundedButton: TransitionButton {
     
     override func awakeFromNib() {
         setupView()

@@ -3,12 +3,16 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		49B3765C510D7AA4A66F07EA /* Pods_Xyrality.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCC26F6768225E4C9D605209 /* Pods_Xyrality.framework */; };
+		521312BD22B7D9C50088ABA7 /* ListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521312BC22B7D9C50088ABA7 /* ListVC.swift */; };
 		5223637F22B66B8F00C61FBA /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5223637E22B66B8F00C61FBA /* NetworkService.swift */; };
 		5223638122B671B800C61FBA /* Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5223638022B671B800C61FBA /* Enums.swift */; };
+		5223638322B69DD900C61FBA /* ServerDataCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5223638222B69DD900C61FBA /* ServerDataCell.swift */; };
+		5223638522B69E2700C61FBA /* Server.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5223638422B69E2700C61FBA /* Server.swift */; };
 		5252F3B522B62BBB00FACFD5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5252F3B422B62BBB00FACFD5 /* AppDelegate.swift */; };
 		5252F3B722B62BBB00FACFD5 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5252F3B622B62BBB00FACFD5 /* LoginVC.swift */; };
 		5252F3BA22B62BBB00FACFD5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5252F3B822B62BBB00FACFD5 /* Main.storyboard */; };
@@ -17,13 +21,17 @@
 		5252F3CA22B62DF700FACFD5 /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5252F3C922B62DF700FACFD5 /* RoundedButton.swift */; };
 		5252F3CC22B62E2400FACFD5 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5252F3CB22B62E2400FACFD5 /* Constants.swift */; };
 		5252F3CF22B62F5600FACFD5 /* UIColor+XyralityExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5252F3CE22B62F5600FACFD5 /* UIColor+XyralityExtensions.swift */; };
-		529F6C4222B6329600C99CBB /* ListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 529F6C4122B6329600C99CBB /* ListVC.swift */; };
+		5283229722B91D32004694C6 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5283229622B91D32004694C6 /* Reachability.swift */; };
 		529F6C4422B636F200C99CBB /* UIDevice+XyralityExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 529F6C4322B636F200C99CBB /* UIDevice+XyralityExtensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0B60237CF6AC4C3DBBFECA4C /* Pods-Xyrality.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Xyrality.debug.xcconfig"; path = "Target Support Files/Pods-Xyrality/Pods-Xyrality.debug.xcconfig"; sourceTree = "<group>"; };
+		521312BC22B7D9C50088ABA7 /* ListVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListVC.swift; sourceTree = "<group>"; };
 		5223637E22B66B8F00C61FBA /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		5223638022B671B800C61FBA /* Enums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enums.swift; sourceTree = "<group>"; };
+		5223638222B69DD900C61FBA /* ServerDataCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerDataCell.swift; sourceTree = "<group>"; };
+		5223638422B69E2700C61FBA /* Server.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Server.swift; sourceTree = "<group>"; };
 		5252F3B122B62BBB00FACFD5 /* Xyrality.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Xyrality.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5252F3B422B62BBB00FACFD5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5252F3B622B62BBB00FACFD5 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
@@ -34,8 +42,10 @@
 		5252F3C922B62DF700FACFD5 /* RoundedButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
 		5252F3CB22B62E2400FACFD5 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		5252F3CE22B62F5600FACFD5 /* UIColor+XyralityExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+XyralityExtensions.swift"; sourceTree = "<group>"; };
-		529F6C4122B6329600C99CBB /* ListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListVC.swift; sourceTree = "<group>"; };
+		5283229622B91D32004694C6 /* Reachability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
 		529F6C4322B636F200C99CBB /* UIDevice+XyralityExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIDevice+XyralityExtensions.swift"; sourceTree = "<group>"; };
+		CCC26F6768225E4C9D605209 /* Pods_Xyrality.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Xyrality.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D29E4C9AE159330683E73596 /* Pods-Xyrality.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Xyrality.release.xcconfig"; path = "Target Support Files/Pods-Xyrality/Pods-Xyrality.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +53,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				49B3765C510D7AA4A66F07EA /* Pods_Xyrality.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -62,6 +73,8 @@
 			children = (
 				5252F3B322B62BBB00FACFD5 /* Xyrality */,
 				5252F3B222B62BBB00FACFD5 /* Products */,
+				57F592C8227DFAA7651CC96A /* Pods */,
+				FCADCD27182ED890AF590E76 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -94,8 +107,8 @@
 		5252F3C622B62BC500FACFD5 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				521312BC22B7D9C50088ABA7 /* ListVC.swift */,
 				5252F3B622B62BBB00FACFD5 /* LoginVC.swift */,
-				529F6C4122B6329600C99CBB /* ListVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -103,6 +116,7 @@
 		5252F3C722B62C1400FACFD5 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				5223638422B69E2700C61FBA /* Server.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -111,6 +125,7 @@
 			isa = PBXGroup;
 			children = (
 				5252F3C922B62DF700FACFD5 /* RoundedButton.swift */,
+				5223638222B69DD900C61FBA /* ServerDataCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -127,10 +142,28 @@
 		529F6C4522B63B9B00C99CBB /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
+				5283229622B91D32004694C6 /* Reachability.swift */,
 				5252F3CB22B62E2400FACFD5 /* Constants.swift */,
 				5223638022B671B800C61FBA /* Enums.swift */,
 			);
 			path = "Support Files";
+			sourceTree = "<group>";
+		};
+		57F592C8227DFAA7651CC96A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0B60237CF6AC4C3DBBFECA4C /* Pods-Xyrality.debug.xcconfig */,
+				D29E4C9AE159330683E73596 /* Pods-Xyrality.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		FCADCD27182ED890AF590E76 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CCC26F6768225E4C9D605209 /* Pods_Xyrality.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,9 +173,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5252F3C322B62BBC00FACFD5 /* Build configuration list for PBXNativeTarget "Xyrality" */;
 			buildPhases = (
+				A142BCCF398C7E86EB0E39B3 /* [CP] Check Pods Manifest.lock */,
 				5252F3AD22B62BBB00FACFD5 /* Sources */,
 				5252F3AE22B62BBB00FACFD5 /* Frameworks */,
 				5252F3AF22B62BBB00FACFD5 /* Resources */,
+				2699E42C7200380D1385CD30 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -199,17 +234,62 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2699E42C7200380D1385CD30 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Xyrality/Pods-Xyrality-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Xyrality/Pods-Xyrality-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Xyrality/Pods-Xyrality-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A142BCCF398C7E86EB0E39B3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Xyrality-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		5252F3AD22B62BBB00FACFD5 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				529F6C4222B6329600C99CBB /* ListVC.swift in Sources */,
 				5252F3B722B62BBB00FACFD5 /* LoginVC.swift in Sources */,
+				521312BD22B7D9C50088ABA7 /* ListVC.swift in Sources */,
+				5283229722B91D32004694C6 /* Reachability.swift in Sources */,
 				5223637F22B66B8F00C61FBA /* NetworkService.swift in Sources */,
 				5252F3CA22B62DF700FACFD5 /* RoundedButton.swift in Sources */,
 				529F6C4422B636F200C99CBB /* UIDevice+XyralityExtensions.swift in Sources */,
 				5252F3CF22B62F5600FACFD5 /* UIColor+XyralityExtensions.swift in Sources */,
+				5223638522B69E2700C61FBA /* Server.swift in Sources */,
+				5223638322B69DD900C61FBA /* ServerDataCell.swift in Sources */,
 				5252F3CC22B62E2400FACFD5 /* Constants.swift in Sources */,
 				5223638122B671B800C61FBA /* Enums.swift in Sources */,
 				5252F3B522B62BBB00FACFD5 /* AppDelegate.swift in Sources */,
@@ -356,6 +436,7 @@
 		};
 		5252F3C422B62BBC00FACFD5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0B60237CF6AC4C3DBBFECA4C /* Pods-Xyrality.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -374,6 +455,7 @@
 		};
 		5252F3C522B62BBC00FACFD5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D29E4C9AE159330683E73596 /* Pods-Xyrality.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
