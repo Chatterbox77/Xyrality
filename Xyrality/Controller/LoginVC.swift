@@ -16,7 +16,6 @@ class LoginVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         view.fixInputAssistant()
-        navigationItem.title = "Login"
         usernameField.delegate = self
         passwordField.delegate = self
 
@@ -47,12 +46,7 @@ class LoginVC: UIViewController {
     
     
     @IBAction func loginBtnTaped(_ sender:UIButton){
-        guard let email = usernameField.text,let password = passwordField.text else {
-            print("FROM HERE")
-            
-            return
-            
-        }
+        guard let email = usernameField.text,let password = passwordField.text else { return }
         if Reachability.isConnectedToNetwork(){
             loginBtn.startAnimation()
             let qualityOfServiceClass = DispatchQoS.QoSClass.background
@@ -99,6 +93,8 @@ class LoginVC: UIViewController {
                 
             }
             })
+        }else{
+            AlertService.alert(in: self,attachTo:self.loginBtn,withTitle: "Something went wrong!", message: "Please check your internet connection and try again")
         }
     }
     
@@ -112,4 +108,4 @@ extension LoginVC:UITextFieldDelegate{
     }
     
 }
- 
+
