@@ -23,6 +23,7 @@
 		5252F3CF22B62F5600FACFD5 /* UIColor+XyralityExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5252F3CE22B62F5600FACFD5 /* UIColor+XyralityExtensions.swift */; };
 		5283229722B91D32004694C6 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5283229622B91D32004694C6 /* Reachability.swift */; };
 		529F6C4422B636F200C99CBB /* UIDevice+XyralityExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 529F6C4322B636F200C99CBB /* UIDevice+XyralityExtensions.swift */; };
+		52DA2FAF22BBBE0A001C523C /* AlertService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52DA2FAE22BBBE0A001C523C /* AlertService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +45,7 @@
 		5252F3CE22B62F5600FACFD5 /* UIColor+XyralityExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+XyralityExtensions.swift"; sourceTree = "<group>"; };
 		5283229622B91D32004694C6 /* Reachability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
 		529F6C4322B636F200C99CBB /* UIDevice+XyralityExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIDevice+XyralityExtensions.swift"; sourceTree = "<group>"; };
+		52DA2FAE22BBBE0A001C523C /* AlertService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertService.swift; sourceTree = "<group>"; };
 		CCC26F6768225E4C9D605209 /* Pods_Xyrality.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Xyrality.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D29E4C9AE159330683E73596 /* Pods-Xyrality.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Xyrality.release.xcconfig"; path = "Target Support Files/Pods-Xyrality/Pods-Xyrality.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -64,6 +66,7 @@
 			isa = PBXGroup;
 			children = (
 				5223637E22B66B8F00C61FBA /* NetworkService.swift */,
+				52DA2FAE22BBBE0A001C523C /* AlertService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -282,6 +285,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5252F3B722B62BBB00FACFD5 /* LoginVC.swift in Sources */,
+				52DA2FAF22BBBE0A001C523C /* AlertService.swift in Sources */,
 				521312BD22B7D9C50088ABA7 /* ListVC.swift in Sources */,
 				5283229722B91D32004694C6 /* Reachability.swift in Sources */,
 				5223637F22B66B8F00C61FBA /* NetworkService.swift in Sources */,

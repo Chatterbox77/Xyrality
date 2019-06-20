@@ -45,6 +45,9 @@ class ListVC: UIViewController {
         serversSortedByCountry = servers.sorted{$0.country < $1.country}
         serversSortedByLanguage = servers.sorted{$0.language < $1.language}
     }
+    @IBAction func logOutBtnPressed(_ sender:UIButton){
+        self.dismiss(animated: true, completion: nil)
+    }
 }
 extension ListVC:UITableViewDelegate,UITableViewDataSource{
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

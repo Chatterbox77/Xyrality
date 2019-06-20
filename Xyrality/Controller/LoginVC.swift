@@ -44,21 +44,21 @@ class LoginVC: UIViewController {
 
     
     
-    func showAlert(withitle title:String, message:String){
-        let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
-        let action = UIAlertAction(title: "Ok", style: .default, handler: nil)
-        alert.addAction(action)
-        present(alert, animated: true, completion: nil)
-    }
     
     @IBAction func loginBtnTaped(_ sender:UIButton){
+        guard let email = usernameField.text,let password = passwordField.text else {
+            print("FROM HERE")
+            
+            return
+            
+        }
         if Reachability.isConnectedToNetwork(){
-            loginBtn.startAnimation() // 2: Then start the animation when the user tap the button
+            loginBtn.startAnimation()
             let qualityOfServiceClass = DispatchQoS.QoSClass.background
             let backgroundQueue = DispatchQueue.global(qos: qualityOfServiceClass)
             backgroundQueue.async(execute: {
                 
-                NetworkService.shared.getDataFromServer(withEmail: "ios.test@xyrality.com", password: "password"){
+                NetworkService.shared.getDataFromServer(withEmail: email, password: password){
                     result in
                     
                     switch result{
@@ -79,7 +79,7 @@ class LoginVC: UIViewController {
                                 DispatchQueue.main.async(execute: { () -> Void in
                                     
                                     self.loginBtn.stopAnimation(animationStyle: .shake) {
-                                        self.showAlert(withitle: "Something went wrong!", message: "Please check your login credentials and try again")
+                                        AlertService.alert(in: self,attachTo:self.loginBtn,withTitle: "Something went wrong!", message: "Please check your login credentials and try again")
                                     }
                                 })
                             }
@@ -89,7 +89,7 @@ class LoginVC: UIViewController {
                             DispatchQueue.main.async(execute: { () -> Void in
                                 
                                 self.loginBtn.stopAnimation(animationStyle: .shake) {
-                                   self.showAlert(withitle: "Something went wrong!", message: "please try again")
+                                    AlertService.alert(in: self,attachTo:self.loginBtn,withTitle: "Something went wrong!", message: "Please try again")
                                 }
                             })
                             break

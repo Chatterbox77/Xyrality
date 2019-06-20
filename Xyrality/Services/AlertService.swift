@@ -12,12 +12,18 @@ class AlertService {
     
     private init() {}
     
-    static func actionSheet(in vc: UIViewController, title: String, completion: @escaping () -> Void) {
-        let alert = UIAlertController(title: nil, message: nil, preferredStyle: .actionSheet)
-        let action = UIAlertAction(title: title, style: .default) { (_) in
-            completion()
+    static func alert(in vc: UIViewController,attachTo view:UIView, withTitle title: String, message:String,completion: (() -> Void)? = nil) {
+        let alert = UIAlertController(title: title, message: message, preferredStyle: .actionSheet)
+        let action = UIAlertAction(title: "Ok", style: .default) { (_) in
+            completion?()
         }
         alert.addAction(action)
+        if UIDevice.current.userInterfaceIdiom == .pad{
+            if let presenter = alert.popoverPresentationController {
+                presenter.sourceView = view
+                presenter.sourceRect = view.bounds
+            }
+        }
         vc.present(alert, animated: true)
     }
 }

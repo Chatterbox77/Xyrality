@@ -15,7 +15,8 @@ class RoundedButton: TransitionButton {
         setupView()
     }
     func setupView(){
-        self.layer.cornerRadius = 10
+        
+        self.cornerRadius = 10
         self.backgroundColor = COLOR_ORANGE
         self.setTitleColor(.white, for: .normal)
     }
